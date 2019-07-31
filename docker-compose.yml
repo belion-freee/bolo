@@ -3,6 +3,6 @@ services:
   app:
     build: .
     volumes:
-      - .:/belion
+      - .:/bolo
     environment:
-      HOME: /belion
+      HOME: /bolo

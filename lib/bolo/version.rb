@@ -1,0 +1,3 @@
+module Bolo
+  VERSION = "0.1.0"
+end
