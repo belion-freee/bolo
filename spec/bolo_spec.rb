@@ -11,6 +11,7 @@ RSpec.describe Bolo do
       expect((1..3).maps(:*, 2)).to eq([2, 4, 6])
       expect((1..3).maps(:<=, 2)).to eq([true, true, false])
       expect([[1,2,3], [4,5,6]].maps(:[], 1)).to eq([2, 5])
+      expect([{ hoge: "hoge1", foo: "foo1" }, { hoge: "hoge2", foo: "foo2" }].maps(:[], :hoge)).to eq(["hoge1", "hoge2"])
     end
   end
 
