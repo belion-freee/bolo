@@ -1,8 +1,8 @@
+[![CircleCI](https://circleci.com/gh/belion-freee/bolo.svg?style=svg)](https://circleci.com/gh/belion-freee/bolo)
+
 # Bolo
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/bolo`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This is a gem that will provide you to extend function of Ruby class.
 
 ## Installation
 
@@ -22,7 +22,24 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Show you some extensions.
+If you want to see all the extensions, see [spec](https://github.com/belion-freee/bolo/blob/master/spec/bolo_spec.rb).
+
+### maps(Enumerable)
+An extension of map. You can pass a second argument as an array.
+
+```ruby
+["hoge", "foo"].maps(:+, 's') # => ["hoges", "foos"]
+[{ hoge: "hoge1", foo: "foo1" }, { hoge: "hoge2", foo: "foo2" }].maps(:[], :hoge) # => ["hoge1", "hoge2"]
+```
+
+### integer?
+Numeric judgment can be made with character strings.
+
+```ruby
+"100".integer? # => true
+"hoge".integer? # => false
+```
 
 ## Development
 
