@@ -6,6 +6,9 @@
 /pkg/
 /spec/reports/
 /tmp/
+/.gem/
+
+.bash_history
 
 # ignore lock files
 Gemfile.lock
